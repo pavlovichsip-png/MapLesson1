@@ -12,10 +12,10 @@ public class Main{
 
         System.out.println(clientIds);
 
-        Integer id1 = clientIds.get("Kirill");
-        System.out.println(id1);
+        clientIds.put("Pasha", 404);
+        clientIds.replace("Kirill", 505);
+        clientIds.putIfAbsent("Vasya", 606);
 
-        System.out.println(clientIds.containsKey("Kirill"));
-        System.out.println(clientIds.containsValue(303));
+        System.out.println(clientIds);
     }
 }
