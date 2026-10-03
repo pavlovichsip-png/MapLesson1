@@ -17,5 +17,8 @@ public class Main{
         clientIds.putIfAbsent("Vasya", 606);
 
         System.out.println(clientIds);
+
+        clientIds.remove("Pasha", 404); //optional value
+        System.out.println(clientIds);
     }
 }
